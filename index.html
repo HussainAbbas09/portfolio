@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6e25aa2f4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".hid").hide();
+      $("#skills").show();
+      $(".link").click(function(){
+        $(".hid").hide();
+        var targetDiv = $(this).data("target");
+        $("#" + targetDiv).show();
+      });
+    });
+  </script>
+</head>
+<body>
+    <div id="home" class="text">
+      <h1 class="hd">Portfolio.</h1>
+        <div id="hdr">
+          <nav>
+            <ul class="sidebar">
+              <li><a href="#home" data-target="home">Home</a></li>
+              <li><a href="#about" data-target="about">About</a></li>
+              <li><a href="#services" data-target="services">Services</a></li>
+              <li><a href="#portfolio" data-target="portfolio">Portfolio</a></li>
+              <li><a href="#contact" data-target="contact">Contact</a></li>
+              <i id="close" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i id="clos" class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div id="front">
+                <div class="head">
+                  <div class="header">
+                  <p class="fadeIn" id="ui">UI/UX Designer</p>
+                  <h2 class="fadeIn">Hi, I'm <span style="color: #ff004f;">Hussain</span> Abbas</h2>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="about" class="abt">
+      <div class="row">
+        <div class="col1">
+          <img class="scaleIn" src="images/about.jpeg">
+          <div class="col2">
+           <h3>About Me</h3>
+           <p2 class="me">Hello! I'm Hussain Abbas, a UI/UX designer passionate about creating user-centered digital experiences that are both functional and visually engaging. I specialize in transforming complex ideas into intuitive designs that solve real user problems. Through a mix of research, ideation, prototyping, and iteration, I aim to design products that feel as good as they look, ensuring that every interaction is meaningful.</p2>
+           <div id="tab">
+             <a class="link" data-target="skills">Skills</a><br>
+             <a class="link" data-target="experience">Experience</a><br>
+             <a class="link" data-target="education">Education</a>
+           </div>
+           <div id="skills" class="hid">
+             <p3 class="asd">UI/UX Designer</p3><br>
+             <p4 class="intro">Designing Web/App interfaces</p4><br>
+             <p5 class="asd">Web Development</p5><br>
+             <p6 class="intro">Web app Development</p6><br>
+             <p21 class="asd">Web Designer</p21><br>
+             <p22 class="intro">Figma</p22>
+           </div>
+           <div id="experience" class="hid">
+             <p7 class="asd"></p7><br>
+             <p8 class="intro"></p8><br>
+           </div>
+           <div id="education" class="hid">
+             <p9 class="asd">2025</p9><br>
+             <p10 class="intro">HTML, CSS and JavaScript for Web Developers from 10Pearls University.</p10><br>
+             <p11 class="asd">2024</p11><br>
+             <p12 class="intro">Course of Programming Fundamentals from 10Pearls University.</p12><br>
+             <p13 class="asd">2024</p13><br>
+             <p14 class="intro">Intermediate passed out from Adamjee Govt Science College.</p14>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="service">
+        <h4>My Services<hr class="line"></h4>
+        <div class="container">
+          <div class="web">
+            <i class="fa-solid fa-code"></i>
+            <h5 class="main">Web Design</h5>
+            <p15 class="end">I craft custom websites that are user-friendly, responsive, and tailored to your brand's unique needs.</p15><br><br>
+            <a class="lm" href="https://web.dev/learn">Learn more</a>
+          </div>
+          <div class="web">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h5 class="main">UI/UX Design</h5>
+            <p15 class="end">I create intuitive, visually appealing interfaces that are both functional and user-centric, ensuring a seamless journey for your audience.</p15><br><br>
+            <a class="lm" href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn more</a>
+          </div>
+          <div class="web">
+            <i class="fa-brands fa-app-store"></i>
+            <h5 class="main">App Design</h5>
+            <p15 class="end">I craft visually stunning, easy-to-navigate mobile apps that engage users and drive long-term success.</p15><br><br>
+            <a class="lm" href="https://buildfire.com/tools-for-mobile-app-designers/">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="works">
+        <h6>My Work</h6>
+        <div class="contain">
+          <div class="work">
+            <img src="images/sa.jfif">
+            <div class="layer">
+              <h7 class="app">Social Media App</h7>
+              <p class="dat">The app connects you to the talented people around the world. Download it from play store.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/ma.jfif">
+            <div class="layer">
+              <h7 class="app">Music App</h7>
+              <p class="dat">The app connects you to the talented people around the world. Download it from play store.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/oa.jfif">
+            <div class="layer">
+              <h7 class="app">Online Shopping App</h7>
+              <p class="dat">The app connects you to the talented people around the world. Download it from play store.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+      <div id="contact" class="details">
+        <div class="contacts">
+          <h8>Contact Me</h8>
+          <p class="mail"><i class="fa-solid fa-paper-plane"></i>hussainabas223@gmail.com</p>
+          <p class="mail"><i class="fa-solid fa-square-phone"></i>03148306599</p>
+          <div class="link">
+            <a href="https://www.facebook.com/share/1AxXcCgsga/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/hussain73561931?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/_hussainabbas_?igsh=M2R0Nm41eTRvOGo3&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://linkedin.com/in/hussain-abbas-911989326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/" download target="_blank" class="btn2">Download CV</a>
+        </div>
+        <div class="inbox">
+          <form>
+            <input class="txt" type="text" name="Name" placeholder="Your Name" required>
+            <input class="txt" type="email" name="Email" placeholder="Your Email" required>
+            <textarea class="txt" type="message" rows="10" placeholder="Your Message" required></textarea>
+            <button class="btn3" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright © Hussain.</p>
+      </div>
+      <div id="slid">
+       <nav class="under">
+        <ul class="side">
+          <li><a href="#home" data-target="home">Home</a></li>
+          <li><a href="#about" data-target="about">About</a></li>
+          <li><a href="#services" data-target="services">Services</a></li>
+          <li><a href="#portfolio" data-target="portfolio">Portfolio</a></li>
+          <li><a href="#contact" data-target="contact">Contact</a></li>
+          <i id="close" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i id="clos" class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </nav>
+      </div>
+<script>
+ function openmenu() {
+    const side = document.querySelector('.side')
+    side.style.display = 'flex'
+  }
+  function closemenu() {
+    const side = document.querySelector('.side')
+    side.style.display = 'none'
+  } 
+</script>
+</body>
+</html>
